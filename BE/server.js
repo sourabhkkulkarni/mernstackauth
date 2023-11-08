@@ -18,9 +18,9 @@ app.use((req, res, next) => {
 app.use(express.json());
 
 // Routes for test
-// app.get("/", (req, res) => {
-//   res.json({ message: "Welcome to the app" });
-// });
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to the app" });
+});
 
 // Actual Routing
 app.use("/api/workouts", workoutRoutes);
